@@ -44,3 +44,11 @@ node default {
   #   class { 'my_class': }
   notify { "Hello, my name is ${::hostname}": }
 }
+
+file { '/etc/motd':
+  2   ensure  => file,
+  3   owner   => 'root',
+  4   group   => 'root',
+  5   mode    => '0644',
+  6   content => "Lets finish this quick!\n",
+  7 }
