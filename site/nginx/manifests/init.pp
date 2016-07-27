@@ -5,13 +5,13 @@ class nginx {
     
   file { '/etc/nginx/nginx.conf':
     ensure => present,
-    source => puppet:
+    source => puppet:///modules/nginx/nginx.conf
     require => Package['nginx'],
     }
   
-  service {'memcached':
+  service {'nginx':
     ensure => running,
     enable => true,
-    subscribe => File['/etc/sysconfig/memcached']
+    subscribe => File['/etc/sysconfig/nginx.conf']
   }
 }
