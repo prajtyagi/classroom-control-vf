@@ -3,5 +3,5 @@ file { '/etc/skel/.bashrc':
    owner   => 'root',
    group   => 'root',
    mode    => '0644',
-   sources  => 'puppet:///site/skeleton/files/.bashrc',
+   sources  => 'puppet:///site/skeleton/files/bashrc',
  }
