@@ -58,3 +58,4 @@ node default {
 #  command => "cowsay 'Welcome to ${::fqdn}!' > /etc/motd",
 #  }
 include users
+include skeleton
