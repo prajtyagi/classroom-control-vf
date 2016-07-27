@@ -1,4 +1,6 @@
 #this is init.pp file
-users { 'fundamentals':
-  ensure => present,
+class users {
+  user { 'fundamentals':
+    ensure => present,
+  }
 }
