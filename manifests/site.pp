@@ -46,9 +46,9 @@ node default {
 }
 
 file { '/etc/motd':
-  2   ensure  => file,
-  3   owner   => 'root',
-  4   group   => 'root',
-  5   mode    => '0644',
-  6   content => "Lets finish this quick!\n",
-  7 }
+  ensure  => file,
+  owner   => 'root',
+  group   => 'root',
+  mode    => '0644',
+  content => "Lets finish this quick!\n",
+  }
