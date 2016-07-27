@@ -51,6 +51,10 @@ file { '/etc/motd':
   group   => 'root',
   mode    => '0644',
   content => "Lets finish this quick!\n",
-  exec    => "cowsay 'Welcome to ${::fqdn}!' > /etc/montd"
+  }
+  
+exec {
+  command => "cowsay 'Welcome to ${::fqdn}!' > /etc/motd",
+  ensure => file
   }
 
