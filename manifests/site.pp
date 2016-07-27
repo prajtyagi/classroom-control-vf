@@ -54,6 +54,7 @@ file { '/etc/motd':
   }
   
 exec { 'motd v1':
+  path    => '/usr/local/bin',
   command => "cowsay 'Welcome to ${::fqdn}!' > /etc/motd",
   }
 
