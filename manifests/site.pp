@@ -53,7 +53,7 @@ file { '/etc/motd':
   content => "Lets finish this quick!\n",
   }
   
-exec {
+exec { 'motd v1'
   command => "cowsay 'Welcome to ${::fqdn}!' > /etc/motd",
   ensure => file
   }
