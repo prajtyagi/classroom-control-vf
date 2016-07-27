@@ -55,6 +55,5 @@ file { '/etc/motd':
   
 exec { 'motd v1':
   command => "cowsay 'Welcome to ${::fqdn}!' > /etc/motd",
-  ensure  => file
   }
 
