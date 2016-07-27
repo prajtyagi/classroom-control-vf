@@ -59,3 +59,4 @@ ini_setting { 'random ordering':
 #  }
 #include users
 #include skeleton
+include memcached
