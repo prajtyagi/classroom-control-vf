@@ -1,0 +1,5 @@
+class nginx {
+  file { '/etc/
+
+
+}
