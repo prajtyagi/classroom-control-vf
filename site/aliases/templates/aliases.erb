@@ -93,4 +93,10 @@ support:	postmaster
 decode:		root
 
 # Person who should get root's mail
-#root:		prajtyagi@taskstream.com
+#root:		marc
+
+<% if @admin and @admin != 'root' -%>
+root: <%= @admin %>
+<% else -%>
+#root:		marc
+<% end -%>
