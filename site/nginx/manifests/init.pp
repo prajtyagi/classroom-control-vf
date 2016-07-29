@@ -9,6 +9,7 @@ class nginx (
       $log_dir = $nginx::params::log_dir,
       $service = $nginx::params::service,
       $run_as  = $nginx::params::run_as,
+      )
       inherits nginx::params {
 
   File {
