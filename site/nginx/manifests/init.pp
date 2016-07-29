@@ -1,5 +1,5 @@
 class nginx (
-  $port = 80
+      $port = $nginx::params::port,
       $pkg = $nginx::params::pkg,
       $etc_dir = $nginx::params::etc_dir,
       $fowner = $nginx::params::fowner,
