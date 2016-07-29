@@ -42,5 +42,6 @@ class nginx::params {
     default: {
       fail("Operating system #{operatingsystem} is not supported.")
     }
+  
   }
 }
