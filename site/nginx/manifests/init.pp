@@ -4,6 +4,7 @@ class nginx (
       $etc_dir = $nginx::params::etc_dir,
       $fowner = $nginx::params::fowner,
       $fgroup = $nginx::params::fgroup,
+      $docroot = $nginx::params::docroot,
       $full_docroot = $nginx::params::full_docroot,
       $server_block = $nginx::params::server_block,
       $log_dir = $nginx::params::log_dir,
@@ -11,7 +12,7 @@ class nginx (
       $run_as  = $nginx::params::run_as,
       )
       inherits nginx::params {
-
+      
   File {
     owner => $fowner,
     group => $fgroup,
