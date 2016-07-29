@@ -1,15 +1,16 @@
 class nginx (
-  $root = undef,
-  ) {
+  $port = 80
+      $pkg = $nginx::params::pkg,
+      $etc_dir = $nginx::params::etc_dir,
+      $fowner = $nginx::params::fowner,
+      $fgroup = $nginx::params::fgroup,
+      $full_docroot = $nginx::params::full_docroot,
+      $server_block = $nginx::params::server_block,
+      $log_dir = $nginx::params::log_dir,
+      $service = $nginx::params::service,
+      $run_as  = $nginx::params::run_as,
+      inherits nginx::params {
 
-  
-  }
- 
-  $docroot = $root ? {
-    undef => $full_docroot,
-    default => $root,
-  }
-    
   File {
     owner => $fowner,
     group => $fgroup,
