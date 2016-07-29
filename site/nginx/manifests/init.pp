@@ -27,12 +27,12 @@ class nginx (
   file { "${docroot}/index.html":
     ensure => file,
     #source => 'puppet:///modules/nginx/index.html',
-    content => template('nginx/index.html.erb'),
+    content => template('nginx/index.html'),
   }
   file { "${etc_dir}/nginx.conf":
     ensure  => file,
     #source  => 'puppet:///modules/nginx/nginx.conf',
-    content => template('nginx/nginx.conf.erb'),
+    content => template('nginx/nginx.conf'),
     require => Package[$pkg],
     notify  => Service[$service],
   }
@@ -42,7 +42,7 @@ class nginx (
   file { "${server_block}/default.conf":
     ensure  => file,
     #source  => 'puppet:///modules/nginx/default.conf',
-    content => template('nginx/default.conf.erb'),
+    content => template('nginx/default.conf'),
     require => Package[$pkg],
     notify  => Service[$service],
   }
