@@ -6,7 +6,7 @@ class nginx::params {
       $etc_dir = '/etc/nginx'
       $fowner = 'root'
       $fgroup = 'root'
-#      $docroot = '/var/www'
+      $docroot = '/var/www'
       $full_docroot = '/var/www'
       $server_block = "${etc_dir}/conf.d"
       $log_dir = '/var/log/nginx'
@@ -19,7 +19,7 @@ class nginx::params {
       $etc_dir = '/etc/nginx'
       $fowner = 'root'
       $fgroup = 'root'
-#      $docroot = '/var/www'
+      $docroot = '/var/www'
       $full_docroot = '/var/www'
       $server_block = "${etc_dir}/conf.d"
       $log_dir = '/var/log/nginx'
@@ -32,7 +32,7 @@ class nginx::params {
       $etc_dir = 'C:/ProgramData/nginx'
       $fowner = 'Administrator'
       $fgroup = 'Administrators'
-#      $docroot = 'C:/ProgramData/nginx/html'
+      $docroot = 'C:/ProgramData/nginx/html'
       $full_docroot = 'C:/ProgramData/nginx/html'
       $server_block = "${etc_dir}/conf.d"
       $log_dir = 'C:/ProgramData/gninx/logs'
