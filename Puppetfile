@@ -10,4 +10,5 @@ mod 'puppetlabs/concat'
 mod 'puppetlabs/mysql', '3.7.0'
 mod 'puppetlabs/stdlib'
 mod 'hunner/wordpress'
+mod 'puppet/staging','1.0.7'
 
