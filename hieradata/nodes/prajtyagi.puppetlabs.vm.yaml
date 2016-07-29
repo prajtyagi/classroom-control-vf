@@ -1,1 +1,3 @@
-$message = 
+$message = hiera('message',' this is new message')
+  notify { $message: }
+}
