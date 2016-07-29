@@ -43,7 +43,7 @@ node default {
   # Example:
   #   class { 'my_class': }
   notify { "Hello, my name is ${::hostname}": }
-  $message = hiera('message',' this is the message'_
+  $message = hiera('message',' this is the message')
   notify { $message: }
 }
 
