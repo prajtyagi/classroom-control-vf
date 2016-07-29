@@ -63,8 +63,8 @@ node default {
 #include skeleton
 #include memcached
 #include nginx
-include apache
-include wordpress
+#include apache
+#include wordpress
 
 
 
