@@ -1,7 +1,9 @@
 class profile::example {
   include apache
   include wordpress
-  include '::mysql::server'
+  class { '::mysql::server':
+  root_password           => 'strongpassword',
+}
   
   notify { 'This is the example profile!': }
 }
